@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="1_Responsive_Web_Design_Certification.css">
+    </head>
+    <body>
+        <h1 id="title">PollutedWorld Survey Form</h1>
+        <p id="description">Thank You for Supporting PollutedWorld.com</p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name <input placeholder="Name" name="name" required id="name" type="text"></label>
+                <label for="email" id="email-label">Email <input placeholder="Email" name="email" required id="email" type="email"></label>
+                <label for="number" id="number-label">Age <input placeholder="Age" name="age" required id="number" type="number" min="18" max="120"></label>
+                <label for="occupation">Current Occupation 
+                    <select required name="occupation" id="dropdown">
+                        <option value="""">(choose one)</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full Time Employment</option>
+                        <option value="3">Part Time Employment</option>
+                        <option value="4">Remote Employment</option>
+                        <option value="5">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>Would you recommend PollutedWorld.com to a friend? 
+                <label><input value="definitely" type=radio name="choice" class="inline"> Definitely</label>
+                <label><input value="maybe" type=radio name="choice" class="inline"> Maybe</label>
+                <label><input value="not sure" type=radio name="choice" class="inline"> Not Sure</label>
+            </fieldset>
+            <fieldset>
+                <label>What is your favorite feature of PollutedWorld.com 
+                    <select required name="feature" id="feature">
+                        <option value="""">(choose one)</option>
+                        <option value="1">Challenges</option>
+                        <option value="2">Projects</option>
+                        <option value="3">Community</option>
+                        <option value="4">Open Source</option>    
+                    </select>
+                </label>
+            <fieldset>
+                <legend>What topics would you like to see more of? (Check all that apply)</legend>
+                <label for="fish"><input value="fish" type="checkbox" id="fish" class="inline">More Fish</label>
+                <label for="plants"><input value="plants" type="checkbox" id="plants" class="inline">More Plants</label>
+                <label for="shrimp"><input value="shrimp" type="checkbox" id="shrimp" class="inline">More Shrimp</label>
+                <label for="snails"><input value="snails" type="checkbox" id="snails" class="inline">More Snails</label>
+                <label for="equipment"><input value="equipment" type="checkbox" id="equipment" class="inline">More Equipment</label>
+                <label for="reviews"><input value="reviews" type="checkbox" id="reviews" class="inline">More Reviews</label>
+            </fieldset>
+            <fieldset>
+                <label for="comments">Please leave comments or suggestions. <textarea  name="comments" id="comments" placeholder="Enter comments here..."></textarea></label>
+            </fieldset>
+        <input type="submit" value="Submit" id="submit">
+        </form>
+    </body>
+</html>
